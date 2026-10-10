@@ -18,3 +18,7 @@ El conjunto utilizado se describe en `../data/muestra_evaluada.csv`.
 **Control de versiones:** las fichas de selección registran GOT-OCR 2.0 porque se generaron antes del cambio; el modelo final fue **TrOCR Small Handwritten**. La nota de `conclusiones_preliminares.md` que solicita todavía ejecutar los tres modelos también es histórica: el archivo definitivo `estado_modelos.csv` confirma que se ejecutaron los tres. Se conservan esos registros sin alterar el contexto de su generación.
 
 Los archivos CSV se transcribieron desde los resultados recuperados del ZIP para su publicación. El ZIP original permanece disponible en la conversación; la reproducibilidad debe comprobarse ejecutando los notebooks.
+
+## Evaluación posterior con revisión humana
+
+Se añadió [`metricas_verificadas.csv`](metricas_verificadas.csv), una tabla de la ejecución posterior sobre diez referencias revisadas. Los archivos de referencia individual y exclusiones no están publicados en esta carpeta; su procedencia y resultado se describen en [la documentación](../docs/validacion_humana.md). No interpretar esta tabla como evaluación estadística de producción.
