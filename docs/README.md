@@ -3,7 +3,7 @@
 **Actividad 4. Selección de modelos y prototipado rápido**  
 **Continuidad:** Fase I - Business Case - Unidad Habitacional TecMilenio.
 
-Esta carpeta contiene **los documentos técnicos ya publicados**. La evaluación fue exploratoria: se ejecutaron tres modelos de reconocimiento óptico de caracteres (OCR, *Optical Character Recognition*) sobre 12 imágenes con etiquetas automáticas no verificadas manualmente.
+Esta carpeta contiene **los documentos técnicos ya publicados**. Se ejecutaron tres modelos de reconocimiento óptico de caracteres (OCR, *Optical Character Recognition*) sobre 12 imágenes con referencias automáticas. Posteriormente se revisaron las 12 imágenes, se aceptaron diez referencias y se excluyeron dos regiones ilegibles. La segunda evaluación sigue siendo una muestra limitada.
 
 ## Documentos disponibles
 
@@ -27,6 +27,6 @@ Los archivos ejecutables y las evidencias están organizados en [notebooks](../n
 
 ## Limitaciones todavía abiertas
 
-La existencia de todos los archivos no equivale a demostrar cada requisito al máximo nivel: las métricas son exploratorias sobre etiquetas automáticas, y sigue pendiente completar la validación humana de una muestra representativa y documentar con mayor precisión licencias y consumo de recursos. Estos puntos se mantienen como **limitaciones técnicas**, no como documentos faltantes.
+La existencia de todos los archivos no equivale a demostrar cada requisito al máximo nivel: la evaluación inicial usó etiquetas automáticas y la segunda evaluación incluyó diez referencias revisadas manualmente. Sigue pendiente una validación representativa de mayor tamaño, confirmar condiciones de licencia y medir memoria GPU. Estos puntos se mantienen como **limitaciones técnicas**, no como documentos faltantes.
 
 **Candidato para la siguiente fase:** [TrOCR Base Printed](decision_siguiente_fase.md), seleccionado provisionalmente para continuar desarrollo y pruebas; no aprobado para producción.
