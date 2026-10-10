@@ -6,7 +6,7 @@ Revisar las 12 imágenes originales de la **Actividad 4. Selección de modelos y
 ## Procedimiento
 Las 12 imágenes se mostraron en Colab, se examinaron visualmente y el usuario confirmó las transcripciones de las matrículas de dos líneas. Se conservaron **10 referencias revisadas** y se excluyeron **2 regiones ilegibles**, registrando identificador y motivo. Se reutilizaron las 36 predicciones existentes, pero las métricas se recalcularon únicamente sobre las **30 predicciones correspondientes a los diez registros aceptados**.
 
-Los archivos `results/referencias_humanas.csv` y `results/exclusiones_validacion.csv` conservan las decisiones. El archivo `results/metricas_verificadas.csv` contiene las métricas resumidas mostradas por la CELDA 17. Para reproducir cada cifra exacta sobre las predicciones debe ejecutarse la CELDA 17 con `results/predicciones_detalle.csv`.
+La CELDA 17 generó archivos locales para referencias y exclusiones, pero **no se pudieron publicar sus valores individuales en el repositorio público**. La tabla agregada `results/metricas_verificadas.csv` sí está publicada con los resultados mostrados por la CELDA 17. Para reproducir cada cifra exacta sobre las predicciones debe ejecutarse la CELDA 17 con `results/predicciones_detalle.csv`.
 
 ## Resultado sobre diez referencias revisadas
 
