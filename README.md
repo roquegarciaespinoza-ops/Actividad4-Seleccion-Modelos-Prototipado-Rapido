@@ -51,6 +51,12 @@ La exactitud representa la coincidencia exacta de toda la matrícula normalizada
 
 **Interpretación:** TrOCR Base Printed obtuvo el mejor resultado exploratorio de calidad, con mayor latencia que TrOCR Small Printed. TrOCR Small Handwritten fue más rápido, pero su comportamiento no es adecuado para texto de matrículas impresas en la muestra. No se declara un ganador definitivo porque las etiquetas no están verificadas y la muestra es pequeña.
 
+## Decisión para la siguiente fase
+
+**Modelo de continuidad seleccionado: [TrOCR Base Printed](docs/decision_siguiente_fase.md)** (`microsoft/trocr-base-printed`). Fue el candidato con la mejor coincidencia exploratoria con las etiquetas automáticas y se considera apropiado para **continuar el desarrollo y la validación**, no para operar el acceso vehicular todavía. Se conserva TrOCR Small Printed como respaldo ante restricciones de tiempo, memoria o costo.
+
+La elección deberá ratificarse con un conjunto de matrículas verificadas manualmente y pruebas representativas de la unidad habitacional. Ver la [justificación técnica y empresarial](docs/decision_siguiente_fase.md) y la [auditoría de cumplimiento de la rúbrica](docs/auditoria_rubrica.md).
+
 ## Organización del repositorio
 
 - `notebooks/`: auditoría y comparación, en archivos de notebook de Python (`.ipynb`).
@@ -81,7 +87,7 @@ La exactitud representa la coincidencia exacta de toda la matrícula normalizada
 
 ## Estado del trabajo
 
-**Prototipo experimental ejecutado; validación formal y publicación de notebooks y evidencias completas pendientes.** La documentación se irá ampliando a medida que se incorporen archivos verificables. No se afirma que se haya alcanzado el objetivo operativo de lectura correcta del 97 % definido en el caso de negocio.
+**Prototipo experimental ejecutado, tres notebooks, documentación y archivos CSV publicados.** La validación formal de referencias, recursos y licencias sigue pendiente. No se afirma que se haya alcanzado el objetivo operativo de lectura correcta del 97 % definido en el caso de negocio.
 
 ## Referencias de las herramientas
 
