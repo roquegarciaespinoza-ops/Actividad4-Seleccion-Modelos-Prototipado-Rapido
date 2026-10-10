@@ -15,6 +15,7 @@ Esta carpeta contiene **los documentos técnicos ya publicados**. La evaluación
 | [Análisis comparativo](analisis_comparativo.md) | Exactitud, precisión, exhaustividad, F1, tasa de error por carácter y latencia |
 | [Conclusiones](conclusiones.md) | Hallazgos, límites y deuda técnica |
 | [Licencias, tamaños y recursos](licencias_recursos.md) | Características de pesos y restricciones del entorno | 
+| [Revisión humana posterior](validacion_humana.md) | Revisión de 12 imágenes, exclusión de dos y métricas sobre diez | 
 | [Decisión para la siguiente fase](decision_siguiente_fase.md) | Justificación para continuar con TrOCR Base Printed |
 | [Auditoría de la rúbrica](auditoria_rubrica.md) | Evidencias publicadas y requisitos que necesitan validación adicional |
 
