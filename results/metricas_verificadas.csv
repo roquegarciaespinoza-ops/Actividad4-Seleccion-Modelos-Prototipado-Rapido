@@ -1,0 +1,4 @@
+modelo,muestras,accuracy_placa,precision,recall,f1,cer,latencia_media_s,latencia_mediana_s
+TrOCR Base impreso,10,0.7,0.9067,0.8222,0.8533,0.2000,0.1209,0.1299
+TrOCR Small impreso,10,0.6,0.8300,0.7333,0.7587,0.2667,0.0600,0.0600
+TrOCR Small manuscrito,10,0.0,0.0202,0.0250,0.0223,1.0625,0.0456,0.0435
