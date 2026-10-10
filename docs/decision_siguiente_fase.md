@@ -24,6 +24,10 @@ La decisión se apoya en que fue el modelo con mejor coincidencia con las etique
 
 La precisión, exhaustividad y F1 se calcularon mediante alineación de caracteres y promediando las métricas por matrícula; no son medidas estándar de clasificación binaria.
 
+## Ratificación posterior con referencias revisadas
+
+Tras revisar visualmente 12 imágenes, se aceptaron diez y se excluyeron dos por ilegibilidad. Sin volver a ejecutar los modelos, se recalcularon sus métricas sobre treinta predicciones existentes. TrOCR Base Printed obtuvo **70 % de exactitud de matrícula (7/10)**, **85.33 % de F1 por caracteres**, **20 % de CER** y **120.9 ms** de latencia media, frente a 60 % de exactitud, 75.87 % de F1 y 60.0 ms de latencia media para TrOCR Small Printed. **La selección de TrOCR Base Printed queda ratificada exclusivamente como candidato de desarrollo**. Diez matrículas no bastan para certificar el objetivo del 97 %. Ver [resultados revisados](validacion_humana.md).
+
 ## Justificación para una decisión de negocio
 
 En control de acceso residencial, **la lectura correcta importa más que minimizar unas decenas de milisegundos de inferencia**, pues un número de placa equivocado puede generar rechazos indebidos o requerir revisión. Dentro de las restricciones de esta muestra, TrOCR Base Printed tuvo mejores indicadores de reconocimiento que las otras dos alternativas.
