@@ -51,6 +51,18 @@ La exactitud representa la coincidencia exacta de toda la matrícula normalizada
 
 **Interpretación:** TrOCR Base Printed obtuvo el mejor resultado exploratorio de calidad, con mayor latencia que TrOCR Small Printed. TrOCR Small Handwritten fue más rápido, pero su comportamiento no es adecuado para texto de matrículas impresas en la muestra. No se declara un ganador definitivo porque las etiquetas no están verificadas y la muestra es pequeña.
 
+## Evaluación posterior con referencias revisadas
+
+Posteriormente, se revisaron visualmente 12 recortes. Se aceptaron 10 matrículas y se excluyeron dos regiones ilegibles. Sin repetir la inferencia, se recalcularon los resultados sobre las **30 predicciones de las diez matrículas aceptadas**:
+
+| Modelo | Exactitud por matrícula | F1 por caracteres | CER | Latencia media |
+|---|---:|---:|---:|---:|
+| TrOCR Base Printed | **70.0 % (7/10)** | **85.33 %** | **20.00 %** | 120.9 ms |
+| TrOCR Small Printed | 60.0 % (6/10) | 75.87 % | 26.67 % | 60.0 ms |
+| TrOCR Small Handwritten | 0.0 % (0/10) | 2.23 % | 106.25 % | 45.6 ms |
+
+Las cifras son de un **piloto de diez matrículas**, no una validación estadística para producción. Las métricas exploratorias originales de doce imágenes se conservan como evidencia histórica. Ver [verificación visual y reevaluación](docs/validacion_humana.md).
+
 ## Decisión para la siguiente fase
 
 **Modelo de continuidad seleccionado: [TrOCR Base Printed](docs/decision_siguiente_fase.md)** (`microsoft/trocr-base-printed`). Fue el candidato con la mejor coincidencia exploratoria con las etiquetas automáticas y se considera apropiado para **continuar el desarrollo y la validación**, no para operar el acceso vehicular todavía. Se conserva TrOCR Small Printed como respaldo ante restricciones de tiempo, memoria o costo.
