@@ -1,0 +1,22 @@
+# Python y entornos virtuales
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+# Credenciales
+.env
+.env.*
+!.env.example
+*token*
+# Archivos generados voluminosos (publicar solo datos autorizados)
+*.safetensors
+*.bin
+*.pt
+*.pth
+data/recortes/
+data/raw/
+# Sistema
+.DS_Store
+Thumbs.db
