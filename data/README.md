@@ -1,5 +1,9 @@
 # Datos de evaluación
 
-La comparación exploratoria utilizó 12 recortes de Sonne Technology con etiquetas generadas automáticamente. El conjunto no se considera validado para estimar desempeño real.
+La muestra `muestra_evaluada.csv` contiene 12 recortes seleccionados de Sonne Technology para la comparación experimental. Incluye identificadores, etiqueta original, texto de referencia utilizado y estado de validación.
 
-Aquí se añadirá `muestra_evaluada.csv` una vez recuperada y verificada la salida original de Colab. No subir fotos completas o recortes de matrículas sin comprobar antes los permisos de redistribución del dataset.
+**Atención:** el campo `etiqueta_verificada` conserva el texto de la etiqueta automática en la modalidad exploratoria, pero todos los registros tienen `estado=sin_verificar`. El nombre de esa columna no significa que se haya completado verificación humana.
+
+Las rutas `/content/...` indican ubicaciones temporales de la sesión original de Colab y **no son enlaces a imágenes publicadas en GitHub**. Para reproducir, ejecutar el notebook de descarga/recorte desde los datos fuente. No se redistribuyeron imágenes por estar pendiente la comprobación de permisos.
+
+Fuente: https://huggingface.co/datasets/sonnetechnology/license-plate-text-recognition-full
