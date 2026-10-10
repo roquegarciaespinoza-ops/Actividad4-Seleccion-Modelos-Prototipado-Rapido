@@ -11,7 +11,7 @@ La tabla usa la distribución de 25 puntos por criterio descrita en la revisión
 |---|---|---|
 | Selección y análisis de modelos | `docs/seleccion_modelos.md`, `docs/auditoria_datasets.md`, `docs/decision_siguiente_fase.md`, `results/fichas_modelos.csv` | **Parcial alto**: tres candidatos ejecutados y sustituciones justificadas; tamaños de pesos y situación de licencias documentados en `docs/licencias_recursos.md`; falta confirmar permisos concretos y medición de memoria GPU, además de ampliar el componente Spaces del ecosistema |
 | Implementación en Colab | `notebooks/Actividad4_Comparacion_Modelos_OCR.ipynb`, `requirements.txt`, `results/estado_modelos.csv` | **Implementado con reservas**: tres modelos en estado OK sobre GPU Tesla T4; no se conserva una ejecución independiente reproducida desde cero en otra sesión y deben revisarse dependencias inestables |
-| Evaluación del desempeño | `results/metricas_resumen.csv`, `results/predicciones_detalle.csv`, `docs/analisis_comparativo.md` | **Exploratoria, no formal**: cuatro métricas y latencia calculadas para 12 imágenes/modelo; faltan etiquetas humanas verificadas, tamaño muestral representativo y medición de recursos/memoria GPU |
+| Evaluación del desempeño | `results/metricas_resumen.csv`, `results/predicciones_detalle.csv`, `docs/analisis_comparativo.md` | **Dos evaluaciones disponibles**: 12 referencias automáticas y diez revisadas manualmente, cuatro métricas y latencia; falta tamaño muestral representativo, archivo de detalle de la segunda ejecución y medición de memoria GPU |
 | Documentación y justificación | README principal, cinco documentos técnicos, decisión de siguiente fase, tres notebooks, CSV y archivos de soporte | **Mayormente cubierto**: estructura y narrativa publicadas; persisten limitaciones de dataset, licencias, entorno y evidencias de ejecución sin salidas visuales por permisos |
 
 ## Lista de comprobación de las instrucciones
@@ -36,7 +36,7 @@ La tabla usa la distribución de 25 puntos por criterio descrita en la revisión
 
 ## Riesgos para la evaluación académica
 
-1. **Métricas sin verdad de referencia validada:** no reclamar precisión real ni cumplimiento de 97 %. Es la brecha académica más importante.
+1. **Validación humana todavía insuficiente:** se revisaron doce imágenes, se aceptaron diez y se excluyeron dos; no reclamar cumplimiento de 97 % ni representatividad del escenario real.
 2. **Muestra de solo doce imágenes:** los porcentajes tienen alta incertidumbre, y algunas referencias parecen textos ajenos a matrículas.
 3. **Modelos de una misma familia:** se implementaron tres modelos distintos, pero dos de texto impreso y uno de manuscrito; comparación limitada de arquitecturas.
 4. **Licencias y recursos incompletos:** falta consolidar tamaños exactos de los modelos, memoria máxima GPU y condiciones de uso de los pesos.
@@ -44,6 +44,6 @@ La tabla usa la distribución de 25 puntos por criterio descrita en la revisión
 
 ## Dictamen académico interno
 
-La **implementación y documentación están sustancialmente avanzadas**. No sería riguroso afirmar que la actividad ya demuestra el 100 % de la rúbrica. Si solo se pueden atender uno o dos puntos antes de entregar, priorizar (1) un subconjunto de matrículas transcritas y verificadas manualmente para una pequeña evaluación formal, y (2) completar la tabla de tamaño, licencia y memoria/recursos de los tres modelos.
+La **implementación y documentación están sustancialmente avanzadas**. No sería riguroso afirmar que la actividad ya demuestra el 100 % de la rúbrica. Si solo se pueden atender uno o dos puntos antes de entregar, priorizar (1) ampliar la muestra revisada y guardar el detalle original de la CELDA 17 y (2) medir memoria GPU y confirmar licencias de uso de los pesos. La muestra de diez referencias ya fue revisada pero no resulta estadísticamente representativa.
 
 La conclusión ejecutiva de continuidad se encuentra en `docs/decision_siguiente_fase.md`: **TrOCR Base Printed** es el candidato provisional para la fase siguiente, con TrOCR Small Printed como alternativa de respaldo.
