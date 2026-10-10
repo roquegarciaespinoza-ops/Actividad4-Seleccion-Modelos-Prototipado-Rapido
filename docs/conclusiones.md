@@ -10,6 +10,10 @@ Se ejecutaron tres modelos de reconocimiento óptico de caracteres (OCR, *Optica
 
 TrOCR Base Printed mostró la mayor coincidencia con las etiquetas automáticas, aunque con mayor latencia. TrOCR Small Printed fue más rápido y TrOCR Small Handwritten mostró el costo de utilizar un modelo entrenado para un dominio distinto.
 
+## Evaluación posterior sobre referencias revisadas
+
+Se revisaron doce recortes; se aceptaron diez y se excluyeron dos por ilegibilidad. Sobre las diez matrículas aceptadas, TrOCR Base Printed obtuvo **7/10 coincidencias exactas (70 %)** y **85.33 % de F1 por caracteres**, mientras que TrOCR Small Printed obtuvo 6/10 (60 %) y 75.87 % de F1. Se mantiene TrOCR Base como modelo recomendado **para continuar prototipado**, sin validación productiva.
+
 ## Alcance de la conclusión
 **Las métricas son exclusivamente exploratorias.** La verificación humana de etiquetas no se completó y el conjunto tiene ejemplos inadecuados para la tarea. No se demuestra precisión del 97 %, ausencia de falsas autorizaciones ni viabilidad productiva del control de acceso.
 
